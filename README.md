@@ -13,6 +13,22 @@ session per deploy, minimizing the SSH connection overhead.
     $ gem install mina
     $ mina
 
+快速配置
+--------------------
+对于一个没有添加Mina配置文件的项目，可以直接使用**rails generate mina:install**来生成配置文件。
+**domain,deploy-to-path,repository为必填选项，否则会报错**
+```
+Usage:
+  rails generate mina:install [options]
+
+  Options:
+    [--worker-processes=WORKER_PROCESSES]  # worker processes number?(default: 3)
+    [--domain=DOMAIN]                      # server domain or ip?(example: 4ye.me or 127.0.0.1)
+    [--deploy-to-path=DEPLOY_TO_PATH]      # deploy_to deploy_to_path on server?(example: /web/mindpin)
+    [--repository=REPOSITORY]              # git repository?(example: git://github.com/mindpin/mina.git)
+    [--branch=BRANCH]                      # git repository branch?(default: master)
+```
+
 Documentation
 -------------
 
