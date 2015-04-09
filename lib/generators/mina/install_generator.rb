@@ -21,12 +21,6 @@ module Mina
         #template "deploy/sh/function.sh"
         #template "deploy/sh/unicorn.sh"
 
-        append_file '.gitignore' do <<-FILE
-# Ignore mina deploy configuration
-/config/deploy.rb
-FILE
-        end
-
         directory 'deploy/sh'
         directory 'config'
 
