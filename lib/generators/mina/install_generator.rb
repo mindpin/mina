@@ -38,7 +38,6 @@ FILE
         gsub_file 'config/deploy.rb', /DEPLOY_PATH/, deploy_to_path
         gsub_file 'config/deploy.rb', /REPOSITORY/, repository
         gsub_file 'config/deploy.rb', /master/, branch if !branch.blank?
-        end
       end
     end
   end
